@@ -1,0 +1,310 @@
+[
+  {
+    "code": "BR",
+    "name": {
+      "pt": "Brasil",
+      "en": "Brazil",
+      "es": "Brasil"
+    },
+    "continent": "america",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/br.svg"
+  },
+  {
+    "code": "AR",
+    "name": {
+      "pt": "Argentina",
+      "en": "Argentina",
+      "es": "Argentina"
+    },
+    "continent": "america",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/ar.svg"
+  },
+  {
+    "code": "CL",
+    "name": {
+      "pt": "Chile",
+      "en": "Chile",
+      "es": "Chile"
+    },
+    "continent": "america",
+    "difficulty": "hard",
+    "flagAsset": "assets/flags/cl.svg"
+  },
+  {
+    "code": "CO",
+    "name": {
+      "pt": "Colômbia",
+      "en": "Colombia",
+      "es": "Colombia"
+    },
+    "continent": "america",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/co.svg"
+  },
+  {
+    "code": "PE",
+    "name": {
+      "pt": "Peru",
+      "en": "Peru",
+      "es": "Perú"
+    },
+    "continent": "america",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/pe.svg"
+  },
+  {
+    "code": "US",
+    "name": {
+      "pt": "Estados Unidos",
+      "en": "United States",
+      "es": "Estados Unidos"
+    },
+    "continent": "america",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/us.svg"
+  },
+  {
+    "code": "CA",
+    "name": {
+      "pt": "Canadá",
+      "en": "Canada",
+      "es": "Canadá"
+    },
+    "continent": "america",
+    "difficulty": "hard",
+    "flagAsset": "assets/flags/ca.svg"
+  },
+  {
+    "code": "MX",
+    "name": {
+      "pt": "México",
+      "en": "Mexico",
+      "es": "México"
+    },
+    "continent": "america",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/mx.svg"
+  },
+  {
+    "code": "FR",
+    "name": {
+      "pt": "França",
+      "en": "France",
+      "es": "Francia"
+    },
+    "continent": "europe",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/fr.svg"
+  },
+  {
+    "code": "DE",
+    "name": {
+      "pt": "Alemanha",
+      "en": "Germany",
+      "es": "Alemania"
+    },
+    "continent": "europe",
+    "difficulty": "hard",
+    "flagAsset": "assets/flags/de.svg"
+  },
+  {
+    "code": "IT",
+    "name": {
+      "pt": "Itália",
+      "en": "Italy",
+      "es": "Italia"
+    },
+    "continent": "europe",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/it.svg"
+  },
+  {
+    "code": "ES",
+    "name": {
+      "pt": "Espanha",
+      "en": "Spain",
+      "es": "España"
+    },
+    "continent": "europe",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/es.svg"
+  },
+  {
+    "code": "GB",
+    "name": {
+      "pt": "Reino Unido",
+      "en": "United Kingdom",
+      "es": "Reino Unido"
+    },
+    "continent": "europe",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/gb.svg"
+  },
+  {
+    "code": "ZA",
+    "name": {
+      "pt": "África do Sul",
+      "en": "South Africa",
+      "es": "Sudáfrica"
+    },
+    "continent": "africa",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/za.svg"
+  },
+  {
+    "code": "EG",
+    "name": {
+      "pt": "Egito",
+      "en": "Egypt",
+      "es": "Egipto"
+    },
+    "continent": "africa",
+    "difficulty": "hard",
+    "flagAsset": "assets/flags/eg.svg"
+  },
+  {
+    "code": "NG",
+    "name": {
+      "pt": "Nigéria",
+      "en": "Nigeria",
+      "es": "Nigeria"
+    },
+    "continent": "africa",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/ng.svg"
+  },
+  {
+    "code": "KE",
+    "name": {
+      "pt": "Quênia",
+      "en": "Kenya",
+      "es": "Kenia"
+    },
+    "continent": "africa",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/ke.svg"
+  },
+  {
+    "code": "MA",
+    "name": {
+      "pt": "Marrocos",
+      "en": "Morocco",
+      "es": "Marruecos"
+    },
+    "continent": "africa",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/ma.svg"
+  },
+  {
+    "code": "CN",
+    "name": {
+      "pt": "China",
+      "en": "China",
+      "es": "China"
+    },
+    "continent": "asia",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/cn.svg"
+  },
+  {
+    "code": "JP",
+    "name": {
+      "pt": "Japão",
+      "en": "Japan",
+      "es": "Japón"
+    },
+    "continent": "asia",
+    "difficulty": "hard",
+    "flagAsset": "assets/flags/jp.svg"
+  },
+  {
+    "code": "IN",
+    "name": {
+      "pt": "Índia",
+      "en": "India",
+      "es": "India"
+    },
+    "continent": "asia",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/in.svg"
+  },
+  {
+    "code": "KR",
+    "name": {
+      "pt": "Coreia do Sul",
+      "en": "South Korea",
+      "es": "Corea del Sur"
+    },
+    "continent": "asia",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/kr.svg"
+  },
+  {
+    "code": "TH",
+    "name": {
+      "pt": "Tailândia",
+      "en": "Thailand",
+      "es": "Tailandia"
+    },
+    "continent": "asia",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/th.svg"
+  },
+  {
+    "code": "AU",
+    "name": {
+      "pt": "Austrália",
+      "en": "Australia",
+      "es": "Australia"
+    },
+    "continent": "oceania",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/au.svg"
+  },
+  {
+    "code": "NZ",
+    "name": {
+      "pt": "Nova Zelândia",
+      "en": "New Zealand",
+      "es": "Nueva Zelanda"
+    },
+    "continent": "oceania",
+    "difficulty": "hard",
+    "flagAsset": "assets/flags/nz.svg"
+  },
+  {
+    "code": "FJ",
+    "name": {
+      "pt": "Fiji",
+      "en": "Fiji",
+      "es": "Fiyi"
+    },
+    "continent": "oceania",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/fj.svg"
+  },
+  {
+    "code": "PG",
+    "name": {
+      "pt": "Papua-Nova Guiné",
+      "en": "Papua New Guinea",
+      "es": "Papúa Nueva Guinea"
+    },
+    "continent": "oceania",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/pg.svg"
+  },
+  {
+    "code": "WS",
+    "name": {
+      "pt": "Samoa",
+      "en": "Samoa",
+      "es": "Samoa"
+    },
+    "continent": "oceania",
+    "difficulty": "easy",
+    "flagAsset": "assets/flags/ws.svg"
+  }
+]

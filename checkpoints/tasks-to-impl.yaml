@@ -1,0 +1,133 @@
+metadata:
+  generated: "2026-10-29"
+  source_tasks: "plan.md"
+  last_updated: "2026-10-29"
+
+summary:
+  total_tasks: 4
+  completed_tasks: 4
+  in_progress_tasks: 0
+  pending_tasks: 0
+  completion_percentage: 100.0
+
+tasks:
+  - task_id: "T039"
+    description: "Definir viewports fixas para os mapas"
+    status: "completed"
+    implementation:
+      files_changed:
+        - file: "lib/map/map_definition.dart"
+          changes:
+            - change_type: "added"
+              description: "Viewports próprias para mundo e continentes."
+    verification:
+      build_passed: true
+      test_results:
+        command: "flutter analyze; flutter test; flutter build web --release"
+        passed: 10
+        failed: 0
+        skipped: 0
+        failures: []
+    upstream_trace:
+      plan_item: "2.2"
+      requirements: ["REQ-004"]
+      full_trace: "REQ-004 -> Phase-2.2 -> T039 -> map_definition.dart"
+
+  - task_id: "T040"
+    description: "Renderizar região completa e limitar interação aos desafios"
+    status: "completed"
+    implementation:
+      files_changed:
+        - file: "lib/map/interactive_map.dart"
+          changes:
+            - change_type: "modified"
+              description: "Renderiza geometrias dentro da viewport e filtra apenas a interação."
+        - file: "lib/services/game_controller.dart"
+          changes:
+            - change_type: "modified"
+              description: "Fornece a definição regional ao mapa."
+    verification:
+      build_passed: true
+      test_results:
+        command: "flutter analyze; flutter test"
+        passed: 10
+        failed: 0
+        skipped: 0
+        failures: []
+    upstream_trace:
+      plan_item: "3.1"
+      requirements: ["REQ-005", "REQ-009"]
+      full_trace: "REQ-005/009 -> Phase-3.1 -> T040 -> interactive_map.dart/game_controller.dart"
+
+  - task_id: "T041"
+    description: "Substituir bandeiras recortadas por destaque de acerto"
+    status: "completed"
+    implementation:
+      files_changed:
+        - file: "lib/map/world_map_painter.dart"
+          changes:
+            - change_type: "modified"
+              description: "Usa cor de acerto e check visual no território."
+        - file: "lib/map/interactive_map.dart"
+          changes:
+            - change_type: "modified"
+              description: "Remove a camada de SVG recortado."
+    verification:
+      build_passed: true
+      test_results:
+        command: "flutter analyze; flutter test"
+        passed: 10
+        failed: 0
+        skipped: 0
+        failures: []
+    upstream_trace:
+      plan_item: "3.1"
+      requirements: ["REQ-006", "REQ-007"]
+      full_trace: "REQ-006/007 -> Phase-3.1 -> T041 -> world_map_painter.dart"
+
+  - task_id: "T042"
+    description: "Validar a nova composição de mapas"
+    status: "completed"
+    implementation:
+      files_changed:
+        - file: "build/web"
+          changes:
+            - change_type: "modified"
+              description: "Build web produzido com a nova renderização."
+    verification:
+      build_passed: true
+      test_results:
+        command: "flutter analyze; flutter test; flutter build web --release"
+        passed: 10
+        failed: 0
+        skipped: 0
+        failures: []
+    upstream_trace:
+      plan_item: "2.2"
+      requirements: ["REQ-004", "REQ-016"]
+      full_trace: "REQ-004/016 -> Phase-2.2 -> T042 -> build/web"
+
+pending_tasks: []
+untracked_changes: []
+traceability_chain:
+  - chain_id: "TRACE-009"
+    requirement: "REQ-004"
+    plan_phase: "Phase-2"
+    plan_item: "2.2"
+    tasks: ["T039", "T042"]
+    files: ["lib/map/map_definition.dart", "lib/map/interactive_map.dart", "build/web"]
+    status: "complete"
+  - chain_id: "TRACE-010"
+    requirement: "REQ-005"
+    plan_phase: "Phase-3"
+    plan_item: "3.1"
+    tasks: ["T040", "T041"]
+    files: ["lib/map/interactive_map.dart", "lib/map/world_map_painter.dart"]
+    status: "complete"
+
+validation:
+  passed: true
+  errors: []
+  warnings:
+    - "O catálogo ainda é representativo e a validação em dispositivo continua pendente."
+  blocking_issues: []

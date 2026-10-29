@@ -1,0 +1,55 @@
+# Plan-to-Tasks Traceability Checkpoint
+metadata:
+  generated: "2026-10-29"
+  source_plan: "plan.md"
+  target_tasks: "plan.md"
+
+summary:
+  total_plan_items: 14
+  covered_plan_items: 14
+  missing_plan_items: 0
+  coverage_percentage: 100.0
+  total_tasks_generated: 39
+  orphan_tasks: 0
+
+phases:
+  - phase_id: "Phase-1"
+    phase_name: "Setup"
+    items:
+      - { item_id: "1.1", tasks: ["T001", "T002", "T003"] }
+  - phase_id: "Phase-2"
+    phase_name: "Fundacional"
+    items:
+      - { item_id: "2.1", tasks: ["T004", "T005", "T006", "T007"] }
+      - { item_id: "2.2", tasks: ["T008", "T009", "T010", "T011", "T012"] }
+      - { item_id: "2.3", tasks: ["T013", "T014", "T015"] }
+  - phase_id: "Phase-3"
+    phase_name: "US1"
+    items:
+      - { item_id: "3.1", tasks: ["T016", "T017", "T018", "T019"] }
+      - { item_id: "3.2", tasks: ["T020", "T021"] }
+      - { item_id: "3.3", tasks: ["T022"] }
+  - phase_id: "Phase-4"
+    phase_name: "US2"
+    items:
+      - { item_id: "4.1", tasks: ["T023"] }
+      - { item_id: "4.2", tasks: ["T024", "T025"] }
+      - { item_id: "4.3", tasks: ["T026"] }
+  - phase_id: "Phase-5"
+    phase_name: "US3"
+    items:
+      - { item_id: "5.1", tasks: ["T027", "T028"] }
+      - { item_id: "5.2", tasks: ["T029", "T030", "T031"] }
+  - phase_id: "Phase-6"
+    phase_name: "US4"
+    items:
+      - { item_id: "6.1", tasks: ["T032", "T033", "T034", "T035"] }
+      - { item_id: "6.2", tasks: ["T036", "T037", "T038", "T039"] }
+
+missing_plan_items: []
+orphan_tasks: []
+upstream_trace: []
+validation:
+  passed: true
+  errors: []
+  warnings: []

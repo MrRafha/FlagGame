@@ -1,0 +1,89 @@
+batch_id: "B08"
+completed_tasks: ["T039", "T040", "T041", "T042"]
+blocked_tasks: []
+files_changed:
+  T035:
+    - file: "lib/data/geojson_repository.dart"
+      change_type: "modified"
+      description: "Carrega o GeoJSON mundial local por padrão."
+    - file: "assets/geo/world.geojson"
+      change_type: "created"
+      description: "Geometrias mundiais com códigos ISO."
+  T036:
+    - file: "assets/data/countries.json"
+      change_type: "modified"
+      description: "Catálogo inicial jogável nos cinco continentes."
+    - file: "assets/flags"
+      change_type: "created"
+      description: "Bandeiras SVG dos países cadastrados."
+  T037:
+    - file: "lib/map/interactive_map.dart"
+      change_type: "modified"
+      description: "Filtra geometrias conforme os países da partida."
+    - file: "lib/services/game_controller.dart"
+      change_type: "modified"
+      description: "Expõe países do continente para composição do mapa."
+  T038:
+    - file: "test/data/country_catalog_test.dart"
+      change_type: "created"
+      description: "Verifica cobertura de todos os continentes."
+  T039:
+    - file: "lib/map/map_definition.dart"
+      change_type: "created"
+      description: "Define viewports fixas para mundo e continentes."
+  T040:
+    - file: "lib/map/interactive_map.dart"
+      change_type: "modified"
+      description: "Renderiza a região completa e limita interação aos desafios."
+    - file: "lib/services/game_controller.dart"
+      change_type: "modified"
+      description: "Expõe a definição de mapa adequada à configuração."
+  T041:
+    - file: "lib/map/interactive_map.dart"
+      change_type: "modified"
+      description: "Remove bandeiras recortadas e mantém paths estáveis."
+    - file: "lib/map/world_map_painter.dart"
+      change_type: "modified"
+      description: "Destaca territórios resolvidos com cor e check."
+upstream_artifacts_consumed:
+  T018: [{ artifact: "contexto.md", used_for: "Recorte da bandeira pelo Path do território." }]
+evidence_mapping:
+  T018: [{ upstream: "REQ-006", output: "lib/map/interactive_map.dart", evidence: "flutter analyze" }]
+traceability:
+  - requirement: "REQ-003"
+    plan_item: "2.1"
+    task: "T035"
+    files: ["lib/data/geojson_repository.dart", "assets/geo/world.geojson"]
+    status: "completed"
+  - requirement: "REQ-002"
+    plan_item: "4.1"
+    task: "T036"
+    files: ["assets/data/countries.json", "assets/flags"]
+    status: "completed"
+  - requirement: "REQ-004"
+    plan_item: "2.2"
+    task: "T037"
+    files: ["lib/map/interactive_map.dart", "lib/services/game_controller.dart"]
+    status: "completed"
+  - requirement: "REQ-005"
+    plan_item: "3.1"
+    task: "T040"
+    files: ["lib/map/interactive_map.dart", "lib/services/game_controller.dart"]
+    status: "completed"
+  - requirement: "REQ-006"
+    plan_item: "3.1"
+    task: "T041"
+    files: ["lib/map/world_map_painter.dart"]
+    status: "completed"
+protocol_violation: false
+errors: []
+warnings:
+- severity: "MEDIUM"
+  message: "O catálogo ainda é representativo e a validação em dispositivo continuam pendentes."
+test_results:
+  batch:
+    command: "flutter analyze; flutter test; flutter build web --release"
+    passed: 10
+    failed: 0
+    skipped: 0
+    failures: []

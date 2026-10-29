@@ -1,0 +1,85 @@
+# Spec-to-Plan Traceability Checkpoint
+metadata:
+  generated: "2026-10-29"
+  source_spec: "contexto.md"
+  target_plan: "plan.md"
+
+summary:
+  total_requirements: 16
+  covered_requirements: 16
+  missing_requirements: 0
+  coverage_percentage: 100.0
+
+requirements:
+  - req_id: "REQ-001"
+    req_description: "Menu inicial e navegação"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-1", phase_name: "Setup", items: [{ item_id: "1.1", description: "Consolidar navegação" }] }
+  - req_id: "REQ-002"
+    req_description: "Configuração de modo, continente, duração e dificuldade"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-4", phase_name: "US2", items: [{ item_id: "4.1", description: "Modo e continente" }, { item_id: "4.2", description: "Durações e dificuldade" }] }
+  - req_id: "REQ-003"
+    req_description: "Dados locais de países, bandeiras e geometrias"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-2", phase_name: "Fundacional", items: [{ item_id: "2.1", description: "Contrato dos dados locais" }] }
+  - req_id: "REQ-004"
+    req_description: "Renderização de territórios, fronteiras e nomes"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-2", phase_name: "Fundacional", items: [{ item_id: "2.2", description: "Paths e hit testing" }, { item_id: "4.2", description: "Nomes por dificuldade" }] }
+  - req_id: "REQ-005"
+    req_description: "Arrastar bandeira e detectar território"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.1", description: "Ciclo de arrasto" }] }
+  - req_id: "REQ-006"
+    req_description: "Preencher território após acerto"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.1", description: "Ciclo de arrasto" }] }
+  - req_id: "REQ-007"
+    req_description: "Feedback de erro sem pontuação"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.1", description: "Ciclo de arrasto" }] }
+  - req_id: "REQ-008"
+    req_description: "Cronômetro global com quatro durações"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.2", description: "Timer e progressão" }] }
+  - req_id: "REQ-009"
+    req_description: "Sorteio sem repetição e progressão"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-2", phase_name: "Fundacional", items: [{ item_id: "2.3", description: "Estado da partida" }] }
+  - req_id: "REQ-010"
+    req_description: "Finalização por tempo ou conclusão"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.2", description: "Finalização" }] }
+  - req_id: "REQ-011"
+    req_description: "Pontuação e estatísticas"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.3", description: "Resultados" }] }
+  - req_id: "REQ-012"
+    req_description: "Tela de resultados e replay"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-3", phase_name: "US1", items: [{ item_id: "3.3", description: "Resultados" }] }
+  - req_id: "REQ-013"
+    req_description: "Ranking local"
+    priority: "P2"
+    plan_mapping: { phase: "Phase-5", phase_name: "US3", items: [{ item_id: "5.1", description: "Ranking local" }] }
+  - req_id: "REQ-014"
+    req_description: "Português, inglês e espanhol"
+    priority: "P2"
+    plan_mapping: { phase: "Phase-5", phase_name: "US3", items: [{ item_id: "5.2", description: "Localização" }] }
+  - req_id: "REQ-015"
+    req_description: "Proteção contra estados extremos"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-2", phase_name: "Fundacional", items: [{ item_id: "2.3", description: "Invariantes da partida" }] }
+  - req_id: "REQ-016"
+    req_description: "Qualidade, desempenho, acessibilidade e entrega"
+    priority: "P1"
+    plan_mapping: { phase: "Phase-6", phase_name: "Qualidade", items: [{ item_id: "6.1", description: "Testes" }, { item_id: "6.2", description: "Validação e entrega" }] }
+
+missing_requirements: []
+orphan_plan_items: []
+validation:
+  passed: true
+  errors: []
+  warnings:
+    - "Os REQ IDs foram derivados de contexto.md porque a especificação original não tinha IDs formais."
