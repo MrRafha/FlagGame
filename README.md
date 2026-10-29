@@ -4,6 +4,8 @@ Jogo educativo de geografia desenvolvido em Flutter. O jogador recebe uma
 bandeira e precisa arrastá-la até o território correspondente em um mapa
 interativo.
 
+[![Assista à demonstração no YouTube](https://img.youtube.com/vi/4GdSJEOQO1g/maxresdefault.jpg)](https://www.youtube.com/watch?v=4GdSJEOQO1g)
+
 ## Status atual
 
 O MVP está funcional e pode ser executado offline. Ele inclui partidas por
